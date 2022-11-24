@@ -14,7 +14,7 @@
             <a class="" href="./index.html">
                <img src="./images/site-logo.svg" alt="site logo" width="192" height="32">
             </a>
-            <nav class="nav ml-auto">
+            <nav class="nav ml-auto hidden sm:hidden md:block">
                <ul class="nav__list flex items-center gap-8">
                   <li class="nav__item">
                      <a class="nav__link text-white text-base font-light hover:border-b-2" href="#">About</a>
@@ -33,6 +33,9 @@
                   </li>
                </ul>
             </nav>
+            <button class="md:hidden  ml-auto" href="#">
+               <img class="" src="./images/btn.svg" alt="button" width="24" height="16">
+            </button>
          </div>
          <div class="w-98 p-10 my-20 border">
             <h1 class="text-white text-5xl uppercase">Immersive experiences that deliver</h1>
@@ -59,7 +62,7 @@
                   <button class="inline-block border py-4 px-10 hover:bg-black hover:text-white">SEE ALL</button>
                </div>
 
-               <div class="grid grid-cols-4 gap-8">
+               <div class="grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   <div class="w-64 relative text-white hover:opacity-75 hover:text-black">
                      <img src="./images/bitmap1.webp" alt="DEEP EARTH" width="256" height="450">
                      <h3 class="absolute bottom-8 left-10 text-3xl">DEEP <br> EARTH</h3>
@@ -100,8 +103,8 @@
    <footer class="footer mt-44 py-11 bg-black">
       <div class="container max-w-6xl mx-auto px-5">
          <div class="footer__inner flex items-start justify-between">
-            <div class="footer__content">
-               <a class="mb-6 inline-block" href="./index.html">
+            <div class="footer__content flex flex-col gap-2 sm:flex-row">
+               <a class="inline-block mb-6 sm:mb-8" href="./index.html">
                   <img src="./images/footer-logo.svg" alt="site logo" width="144" height="24">
                </a>
                <ul class="nav__list flex items-center gap-8">
